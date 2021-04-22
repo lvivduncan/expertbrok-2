@@ -14,9 +14,9 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     --cyan-dark: #273c66;
     --red: #ed1c24;
     --black: #111;
-    --dark: #505050;
     --gray-light: #f5f5f5;
     --gray: #afafaf;
+    --gray-dark: #505050;
     --white: #fff;
     --gold: #f4bf00;
 }
