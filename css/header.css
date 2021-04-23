@@ -59,6 +59,21 @@
 
     transition: .5s;
     position: relative;
+
+    opacity: 0;
+    animation: slide_top .5s linear forwards;
+    animation-delay: calc(.2s * var(--i));
+}
+
+@keyframes slide_top {
+    0%{
+        transform: translateY(100px);
+        opacity: 0;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
 }
 
 #nav ul li a:hover{
@@ -86,6 +101,8 @@
 #nav ul li:hover::before{
     display: none;
 }
+
+
 
 /* search + phone */
 #nav-misc{
