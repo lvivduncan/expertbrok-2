@@ -1,0 +1,57 @@
+
+.parallax{
+    padding: 100px 20px;
+    text-align: center;
+    position: relative;
+}
+
+.parallax::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right: 0;
+    z-index: 1;
+    background: rgba(0,0,0,.7)
+}
+
+.parallax p{
+    color: var(--white);
+    position: relative;
+    z-index: 2;
+    width: 50%;
+    margin: 0 auto 26px;
+    text-align: justify;
+}
+
+.parallax h1{
+    position: relative;
+    z-index: 2;
+    color: var(--white);
+}
+
+/* button */
+.parallax a{
+    display: block;
+    width: 220px;
+    padding: 10px 20px;
+    /* background: var(--cyan); */
+    background: var(--cyan-dark);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    margin: auto;
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1px;
+    transition: .5s;
+}
+
+.parallax a:hover{
+    color: var(--cyan-dark);
+    background: var(--white);
+}

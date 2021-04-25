@@ -13,6 +13,10 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     --cyan: #1e5c8a;
     --cyan-dark: #273c66;
     --cyan-light: #00adee;
+    /* --cyan-ultralight: #f6faff; */
+    /* --cyan-ultralight: #ebf4ff; */
+    /* --cyan-ultralight: #f2f7ff; */
+    --cyan-ultralight: #f4f6f5;
     --red: #ed1c24;
     --black: #111;
     --gray-light: #e7e7e7;
@@ -24,45 +28,50 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 
 body{
     font-size: 16px;
-    font-family: 'Rubik', sans-serif;
+    font-family: 'Nunito', sans-serif;
     color: var(--black);
     background-attachment: fixed;
+    font-weight: 500;
+    background: var(--cyan-ultralight);
 }
 
 h1,h2,h3,h4,h5,h6{
-    font-family: 'Nunito', sans-serif;
+    font-family: 'Rubik', sans-serif;
     color: var(--black);
     margin: 0 0 26px;
     line-height: 1.2;
+    text-transform: uppercase;
+    font-weight: 700;
 }
 
 h1{
-    font-size: 2.5rem;
+    font-size: 42px;
 }
 
 h2{
-    font-size: 2.25rem;
+    font-size: 36px;
 }
 
 h3{
-    font-size: 2rem;
+    font-size: 30px;
 }
 
 h4{
-    font-size: 1.75rem;
+    font-size: 22px;
 }
 
 h5{
-    font-size: 1.5rem;
+    font-size: 16px;
 }
 
 img{
     max-width: 100%;
     vertical-align: middle;
+    border-radius: 5px;
 }
 
 ::selection{
-    background: var(--red);
+    background: var(--cyan);
     color: var(--white);
 }
 
@@ -82,12 +91,12 @@ a:hover{
 }
 
 p{
-    line-height: 1.5;
+    line-height: 1.6;
     margin: 0 0 26px;
     font-size: 16px;
 }
 
-
+/* 
 figure{
     transition: .5s;
     background: var(--white);
@@ -96,4 +105,20 @@ figure{
 figure:hover{
     padding: 10px;
     outline: 1px solid var(--gray-light)
+} */
+
+
+/* .wrap{
+    margin: 0 20px;
+    display: flex;
 }
+ */
+
+
+
+
+
+
+
+
+/* end */

@@ -1,0 +1,52 @@
+/* зліва фото, справа текст */
+.images-text{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 50px;
+    margin: 100px 20px;
+}
+
+.images-text .images{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+}
+
+/* .images-text .images figure{
+    transition: .5s;
+    border-radius: 5px;
+    border: 2px solid var(--white);
+}
+
+.images-text .images figure:hover{
+    border-color: var(--gray)
+} */
+
+.images-text .images img{
+    width: 900px;
+    height: 300px;
+    object-fit: cover;
+    object-position: center center;
+    transition: .5s;
+    /* transform: scale(1,1); */
+}
+
+/* .images-text .images img:hover{
+    transform: scale(0.95,0.95);
+} */
+
+.images-text .text-content{
+    display: flex;
+    flex-direction: column;
+    color: var(--gray-dark);
+}
+
+.images-text .text-content :last-child{
+    margin-top: auto;
+    text-align: right;
+    color: var(--cyan-dark)
+}
+
+.images-text .text-content h1{
+    margin: 0 0 50px;
+}

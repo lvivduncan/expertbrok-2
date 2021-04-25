@@ -51,7 +51,7 @@
 
 
 /* для фонової картинки */
-@keyframes zoomIn {
+/* @keyframes zoomIn {
     0% {
         opacity: 0;
         transform: scale3d(1.5, 1.5, 1.5);
@@ -60,4 +60,38 @@
         opacity: 1;
         transform: scale3d(1, 1, 1);
     }
+} */
+
+
+/* анімація фонової картинки у шапці */
+@keyframes header-image { 
+    0% {
+        animation-timing-function: ease-in;
+    }
+    8% {
+        opacity: 1;
+        transform: scale(1.05);
+        animation-timing-function: ease-out;
+    }
+    17% {
+        transform: scale(1.1);
+    }
+    25% {
+        transform: scale(1.15);
+    }
+    100% {}
 }
+
+/* анімація заголовка фонової картинки */
+/* анімація заголовка фонового тексту */
+/* @keyframes slide_left {
+    0%{
+        transform: translateX(-100px);
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+} */
