@@ -38,7 +38,6 @@
 .images-text .text-content{
     display: flex;
     flex-direction: column;
-    color: var(--gray-dark);
 }
 
 .images-text .text-content :last-child{
