@@ -203,11 +203,23 @@
     text-transform: uppercase;
     font-weight: 500;
     font-size: 42px;
-    margin: 0;
+    /* margin: 0; */
 
     opacity: 0;
     animation: slide_left .5s linear forwards;
     animation-delay: calc(.2s * var(--i));
+}
+
+#title h1::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    width: 60px;
+    height: 5px;
+    background: var(--white);
+    border-radius: 10px;
 }
 
 #title p{

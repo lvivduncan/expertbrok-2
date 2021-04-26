@@ -2,66 +2,120 @@
 .news-spoiler{
     padding: 100px 20px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
+    /* grid-template-columns: repeat(2,1fr); */
+    grid-template-columns: 2fr repeat(2,1fr);
     grid-gap: 30px;
+    position: relative;
+    z-index: 1;
 }
 
-.news-spoiler > .news{
+.news-spoiler::after{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    z-index: -1;
+    background: rgba(255,255,255,.5);
+}
+
+.news-spoiler .news{
     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-gap: 30px;
 }
 
-.news-spoiler > .news article{
+.news-spoiler .news article{
     background: var(--white);
     padding: 10px;
     border-radius: 5px;
-}
-
-.news-spoiler > .news figure{
     display: grid;
     grid-template-columns: 1fr 1.5fr;
     grid-gap: 20px;
 }
 
-.news-spoiler > .news article img{
-    height: 160px;
-    /* height: 100%; */
-    object-fit: cover;
-    object-position: center center;
+/* .news-spoiler .news figure{
+} */
+
+.news-spoiler .news article > a{
+    background-size: cover!important;
+    background-position: center center!important;
+    border-radius: 5px;
 }
 
-.news-spoiler .news figcaption{
+.news-spoiler .news .desc{
     /* background: var(--white); */
 }
 
-.news-spoiler > .news article h3{
+.news-spoiler .news h3{
     line-height: 1;
     font-size: 22px;
     font-weight: 600;
     margin: 0 0 20px
 }
 
-.news-spoiler > .news article h3 a{
+.news-spoiler .news h3 a{
     text-decoration: none;
     color: var(--cyan-dark);
     transition: .5s;
 }
 
-.news-spoiler > .news article h3 a:hover{
+.news-spoiler .news h3 a:hover{
     color: var(--cyan)
 }
 
-/* пошук справа */
+
+
+/* справа */
 .news-spoiler .adds{
-    display: grid;
+    /* background: var(--white); */
+    /* background: var(--cyan-ultralight); */
+    background: var(--cyan);
+    color: var(--white);
+    padding: 10px;
+    border-radius: 5px;
+
+/*     display: grid;
     grid-template-columns: repeat(2,1fr);
     grid-template-areas: 
         'spoiler-news spoiler-category';
-    grid-gap: 20px;
+    grid-gap: 20px; */
 }
 
-/* гарячі новини справа */
+.news-spoiler .adds h2{
+    font-size: 28px;
+    position: relative;
+    color: var(--white);
+    font-weight: 500;
+}
+
+.news-spoiler .adds h2::before{
+    content: '';
+    display: inline-block;
+    width: 56px;
+    height: 4px;
+    position: absolute;
+    left: 0;
+    bottom: -10px;
+    /* background: var(--black); */
+    background: var(--white);
+    border-radius: 10px;
+}
+
+.news-spoiler .image{
+    background-size: cover!important;
+    border-radius: 5px;
+}
+
+
+
+
+
+
+
+/* 
 .news-spoiler .adds .news{
     grid-area: spoiler-news;
     display: flex;
@@ -88,9 +142,7 @@
     transition: .5s;
 }
 
-.news-spoiler .adds .news article h4 a:hover{
-    /* color: var(--gray) */
-}
+.news-spoiler .adds .news article h4 a:hover{}
 
 .news-spoiler .adds .news article p{
     color: var(--white);
@@ -102,19 +154,16 @@
 }
 
 .news-spoiler .adds .category h4{
-    /* display: inline-block; */
     display: block;
     margin: 0;
     color: var(--black);
     padding: 10px;
-    /* background: var(--white); */
     text-transform: none;
     font-weight: 500;
     border-radius: 5px;
 }
 
 .news-spoiler .adds .category h4 a{
-    /* color: var(--cyan-light); */
     text-decoration: none;
     transition: .5s;
     display: flex;
@@ -141,7 +190,7 @@
 
 .news-spoiler .adds .category :hover svg{
     stroke: var(--black);
-}
+} */
 
 /* .news-spoiler .adds form{
     display: block;

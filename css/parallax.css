@@ -24,12 +24,25 @@
     width: 50%;
     margin: 0 auto 26px;
     text-align: justify;
+    font-size: 19px;
 }
 
 .parallax h1{
     position: relative;
     z-index: 2;
     color: var(--white);
+}
+
+.parallax h1::before{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -10px;
+    background: var(--white);
+    border-radius: 10px;
 }
 
 /* button */
