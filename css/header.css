@@ -30,7 +30,6 @@
     z-index: 5;
     width: 100vw;
     background: var(--white);
-    /* border-bottom: 1px solid var(--gray-light); */
     box-shadow: 0 0 5px var(--gray);
     display: flex;
     align-items: center;

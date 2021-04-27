@@ -65,3 +65,18 @@ $('#up').on('click', function(e){
 	}
 );
 
+if(localStorage.lang == 1){
+        $('#lang-wrapper').addClass('click');
+        $('#lang').addClass('click');
+} else {
+    // lang
+    $('#lang-wrapper, #lang').on('click', function(e){
+        e.preventDefault();
+
+        $('#lang-wrapper').addClass('click');
+        $('#lang').addClass('click');
+
+        localStorage.lang = 1;
+    });    
+}
+
