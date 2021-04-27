@@ -22,6 +22,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     --gray-light: #e7e7e7;
     --gray: #afafaf;
     --gray-dark: #505050;
+    --gray-ultradark: #1f1f1f;
     --white: #fff;
     --gold: #f4bf00;
 }
@@ -29,7 +30,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 body{
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
-    /* color: var(--black); */
     background-attachment: fixed;
     font-weight: 500;
     background: var(--cyan-ultralight);

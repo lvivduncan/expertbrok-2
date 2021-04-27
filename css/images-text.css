@@ -12,28 +12,13 @@
     grid-gap: 30px;
 }
 
-/* .images-text .images figure{
-    transition: .5s;
-    border-radius: 5px;
-    border: 2px solid var(--white);
-}
-
-.images-text .images figure:hover{
-    border-color: var(--gray)
-} */
-
 .images-text .images img{
     width: 900px;
     height: 300px;
     object-fit: cover;
     object-position: center center;
     transition: .5s;
-    /* transform: scale(1,1); */
 }
-
-/* .images-text .images img:hover{
-    transform: scale(0.95,0.95);
-} */
 
 .images-text .text-content{
     display: flex;

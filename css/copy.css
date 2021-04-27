@@ -1,0 +1,30 @@
+#copy{
+    background:var(--gray-ultradark);
+    padding: 5px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    /* border-top: solid 5px var(--black); */
+}
+
+#copy ul{
+    /* width: 182px; */
+    display: flex;
+    /* text-align: center; */
+    align-items: center;
+    /* justify-content: space-around; */
+}
+
+#copy li{
+    display: inline-block;
+    margin: 0 5px;
+}
+
+#copy li svg{
+    width: 16px;
+    height: 16px;
+}
+
+#copy p{
+    margin: 0;
+}

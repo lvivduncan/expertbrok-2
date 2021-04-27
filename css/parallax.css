@@ -50,7 +50,6 @@
     display: block;
     width: 220px;
     padding: 10px 20px;
-    /* background: var(--cyan); */
     background: var(--cyan-dark);
     color: var(--white);
     font-weight: 900;
