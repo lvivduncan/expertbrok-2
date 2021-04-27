@@ -5,6 +5,12 @@
     position: relative;
 }
 
+@media(max-width:450px) {
+    .parallax{
+        padding: 50px 20px;
+    }
+}
+
 .parallax::before{
     content: '';
     display: inline-block;
@@ -27,10 +33,22 @@
     font-size: 19px;
 }
 
+@media(max-width:776px) {
+    .parallax p{
+        width: 100%;
+    }   
+}
+
 .parallax h1{
     position: relative;
     z-index: 2;
     color: var(--white);
+}
+
+@media(max-width:450px) {
+    .parallax h1{
+        font-size: 34px;
+    }
 }
 
 .parallax h1::before{

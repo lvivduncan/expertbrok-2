@@ -2,10 +2,16 @@
 .news-spoiler{
     padding: 100px 20px;
     display: grid;
-    grid-template-columns: 2fr repeat(2,1fr);
+    grid-template-columns: repeat(2,1fr);
     grid-gap: 30px;
     position: relative;
     z-index: 1;
+}
+
+@media(max-width:776px) {
+    .news-spoiler{
+        grid-template-columns: 1fr;
+    }   
 }
 
 .news-spoiler::after{
@@ -26,6 +32,12 @@
     grid-gap: 30px;
 }
 
+@media(max-width:450px) {
+    .news-spoiler .news{
+        grid-template-columns: 1fr;
+    }   
+}
+
 .news-spoiler .news article{
     background: var(--white);
     padding: 10px;
@@ -35,16 +47,29 @@
     grid-gap: 20px;
 }
 
+@media(max-width: 1200px) {
+    .news-spoiler .news article{
+        grid-template-columns: 1fr;
+    }   
+}
+
 .news-spoiler .news article > a{
     background-size: cover!important;
     background-position: center center!important;
     border-radius: 5px;
+    height: 120px;
 }
 
 .news-spoiler .desc{
     display: flex;
     flex-flow: column;
     justify-content: center;
+}
+
+@media(max-width: 1200px) {
+    .news-spoiler .desc{
+        justify-content: flex-start;
+    }
 }
 
 .news-spoiler .news h3{
@@ -68,10 +93,38 @@
 
 /* справа */
 .news-spoiler .adds{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 30px;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media(max-width: 1200px) {
+    .news-spoiler .adds{
+        grid-template-columns: 1fr;
+        align-items: stretch;
+    }   
+}
+
+.news-spoiler .adds .adds-text{
     background: var(--cyan);
     color: var(--white);
     padding: 10px;
     border-radius: 5px;
+}
+
+.news-spoiler .adds .adds-image{
+    background-size: cover!important;
+    background-position: center!important;
+    border-radius: 5px;
+    height: 100%;
+}
+
+@media(max-width: 1200px){
+    .news-spoiler .adds .adds-image{
+        display: none;
+    }
 }
 
 .news-spoiler .adds h2{
@@ -91,9 +144,4 @@
     bottom: -10px;
     background: var(--white);
     border-radius: 10px;
-}
-
-.news-spoiler .image{
-    background-size: cover!important;
-    border-radius: 5px;
 }
