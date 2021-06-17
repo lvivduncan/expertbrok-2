@@ -1,0 +1,33 @@
+.partners{
+    padding: 100px 20px;
+    background: var(--gray-dark);
+    text-align: center;
+}
+
+.partners h1{
+    position: relative;
+    color: var(--white)
+}
+
+.partners h1::before {
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -10px;
+    background: var(--white);
+    border-radius: 10px;
+}
+
+/* desktop */
+.partners .owl-carousel.off{
+    display: grid;
+    grid-template-columns: repeat(5,1fr);
+    grid-gap: 20px;
+}
+
+.partners .item{
+    background: var(--white)
+}
