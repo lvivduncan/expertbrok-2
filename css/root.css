@@ -107,6 +107,24 @@ p{
 
 
 
+#up{ 
+    text-decoration: none; 
+    position: fixed; 
+    bottom: 20px; 
+    right: 20px; 
+    z-index: 8; 
+    width: 40px; 
+    height: 40px; 
+    
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300adee' viewBox='0 0 16 16'%3E%3Cpath d='M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z'/%3E%3C/svg%3E");
+    background-size: cover;
+
+    transition: all 0.5s;
+}
+
+#up:hover{
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23273c66' viewBox='0 0 16 16'%3E%3Cpath d='M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z'/%3E%3C/svg%3E");
+}
 
 
 

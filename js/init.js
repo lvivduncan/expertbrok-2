@@ -141,3 +141,30 @@ $('#menu a').on('click', function(e){
     e.preventDefault();
     localStorage.setItem('disabled', 1);
 });
+
+$("#down a").click(function(e) {
+    e.preventDefault();
+
+    var next = $('#wiev-block');
+
+    $('html, body').animate({ 
+        scrollTop:next.offset().top - 120 + 'px'
+    }, 'slow');
+
+});
+
+
+$(window).scroll(function(){
+    if ($(this).scrollTop() > 100) {
+        $('#up').fadeIn();
+    } else {
+        $('#up').fadeOut();
+}});
+
+$('#up').click(function(e){
+    e.preventDefault();
+	$("html, body").animate({ 
+        scrollTop: 0 
+    }, 600);
+	// return false;
+});
