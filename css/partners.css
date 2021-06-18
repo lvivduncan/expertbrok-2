@@ -9,13 +9,14 @@
     color: var(--white);
     font-size: 28px;
     font-weight: 500;
+    margin: 0 0 40px;
 }
 
 .partners h2::before {
     content: '';
     display: inline-block;
     width: 60px;
-    height: 5px;
+    height: 4px;
     position: absolute;
     left: calc(50% - 30px);
     bottom: -10px;

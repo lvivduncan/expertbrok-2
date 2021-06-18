@@ -44,30 +44,31 @@
     transition: .5s;
 }
 
-.images-text .text-content{
+.text-content{
     display: flex;
     flex-direction: column;
 }
 
-.images-text .text-content :last-child{
+.text-content :last-child{
     margin-top: auto;
     text-align: right;
     color: var(--cyan-dark)
 }
 
-.images-text .text-content h1{
+.text-content h1{
     margin: 0 0 50px;
     position: relative;
+    font-weight: 500;
 }
 
 @media(max-width:450px) {
-    .images-text .text-content h1{
+    .text-content h1{
         font-size: 34px
     }
 }
 
 
-.images-text .text-content h1::before{
+.text-content h1::before{
     content: '';
     display: inline-block;
     width: 60px;
