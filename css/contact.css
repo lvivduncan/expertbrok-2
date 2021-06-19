@@ -77,7 +77,7 @@
 
 #form-textarea textarea{
     resize: none;
-    height: 200px;
+    height: 140px;
 }
 
 #form-button{
@@ -121,25 +121,79 @@
     border-color: var(--cyan)
 }
 
-#map{
-    /* width: 50%; */
+/* блок справа */
+#contact-info{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    background: var(--white);
 }
 
-#map iframe{
-    width: 100%!important;
-    height: 350px!important;
+@media(max-width:450px) {
+    #contact-info{
+        grid-template-columns: 1fr;
+        padding: 20px;
+    }
 }
 
-/* блок з даними справа */
-#address{
-    /* width: 50%; */
-    padding: 0 20px;
+#contact-info ul{
+    margin: 20px 0 20px 20px;
+    padding: 0 20px 0 20px;
 }
 
-#address h2{
-    font-weight: 500;
+#contact-info ul:first-child{
+    border-right: 1px dashed var(--gray);
+    padding: 0 20px 0 0;
 }
 
-#address ul{
-    margin: 30px 0 30px 30px;
+@media(max-width:450px) {
+    #contact-info ul,
+    #contact-info ul:first-child{
+        margin: 0;
+        padding: 0;
+        border: none;
+    }
+    #contact-info ul{
+        order: 1;
+    }
+    #contact-info ul:first-child{
+        order: 2;
+    }
+}
+
+#contact-info li{
+    display: block;
+    margin: 5px 0;
+}
+
+#contact-info li a{
+    color: var(--cyan);
+    padding: 5px 0;
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    grid-gap: 10px;
+}
+
+#contact-info svg{
+    width: 24px;
+    height: 24px;
+    fill: var(--cyan);
+    transition: .5s;
+}
+
+#contact-info a:hover{
+    color: var(--gray);
+}
+
+#contact-info a:hover svg{
+    fill: var(--gray);
+    transform: scale(1.1)
+}
+
+#contact-info p{
+    margin: 10px 5px;
+    color: var(--cyan);
+}
+
+#contact-info strong{
+    color: var(--gray-dark);
 }

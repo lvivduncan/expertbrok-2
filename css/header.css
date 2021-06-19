@@ -358,7 +358,7 @@
     align-items: center;
     justify-content: center;
 
-    height: 200px;
+    height: 180px;
     border-radius: 5px;
     padding: 30px;
     background: var(--cyan-ultralight);
@@ -405,7 +405,7 @@
 
 /* arrow down */
 #down {
-    margin: 30px auto;
+    margin: 0 auto;
     position: relative;
     z-index: 1;
 }

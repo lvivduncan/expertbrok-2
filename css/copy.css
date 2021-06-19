@@ -55,6 +55,7 @@
 #copy li svg{
     width: 16px;
     height: 16px;
+    fill: var(--gray);
 }
 
 @media(max-width:776px) {
