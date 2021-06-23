@@ -13,9 +13,6 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     --cyan: #1e5c8a;
     --cyan-dark: #273c66;
     --cyan-light: #00adee;
-    /* --cyan-ultralight: #f6faff; */
-    /* --cyan-ultralight: #ebf4ff; */
-    /* --cyan-ultralight: #f2f7ff; */
     --cyan-ultralight: #f4f6f5;
     --red: #ed1c24;
     --black: #111;
@@ -102,10 +99,91 @@ p{
     animation-delay: -99s!important;
 }
 
+/* назва сторінки */
+#page-name{
+    /* min-height: calc(33vh + 100px); */
+    /* min-height: calc(25vh + 100px); */
+    min-height: calc(25vh + 140px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    background: var(--white);
+    padding: 0 20px;
+    text-align: center;
+    position: relative;
+}
 
+@media(max-width:776px) {
+    #page-name{
+        min-height: 260px;
+        padding: 60px 0 0;
+    }
+}
 
+#page-name.cover{
+    background-size: cover!important;
+    background-position: center!important;
+}
 
+/* тінь */
+#page-name.cover::before{
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    bottom:0;
+    right:0;
+    z-index: 1;
+    background: rgba(0,0,0,.5);
+}
 
+#page-name h1{
+    color: var(--cyan);
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 42px;
+    position: relative;
+    margin: 30px 0;
+}
+
+@media(max-width:776px) {
+    #page-name h1{
+        font-size: 30px;
+    }
+}
+
+#page-name h1::before{
+    content: '';
+    display: inline-block;
+    position: absolute;
+    left: calc(50% - 30px);
+    bottom: -10px;
+    width: 60px;
+    height: 5px;
+    background: var(--cyan);
+    border-radius: 10px;
+}
+
+#page-name.cover h1{
+    color: var(--white);
+    z-index: 2;
+}
+
+#page-name.cover h1::before{
+    background: var(--white);
+}
+
+.social{
+    margin: 30px 0;
+    text-align: center;
+}
+
+@media(max-width:776px) {
+    .social{
+        margin: 0;        
+    }    
+}
 
 #up{ 
     text-decoration: none; 

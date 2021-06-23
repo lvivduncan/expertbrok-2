@@ -1,0 +1,35 @@
+#breadcrumbs{
+    position: relative;
+    z-index: 2;
+}
+
+#breadcrumbs li{
+    display: inline-block;
+}
+
+.cover #breadcrumbs li{
+    color: var(--white);
+}
+
+#breadcrumbs li::before{
+    content: '\2192';
+    display: inline-block;
+    padding: 0 5px;
+    color: var(--gray);
+}
+
+.cover #breadcrumbs li::before{
+    color: var(--white);
+}
+
+#breadcrumbs li:first-child:before{
+    content: '';
+}
+
+#breadcrumbs li a{
+    color: var(--gray-dark)
+}
+
+.cover #breadcrumbs a{
+    color: var(--white);
+}

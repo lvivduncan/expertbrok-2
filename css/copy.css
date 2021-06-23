@@ -15,7 +15,11 @@
 
 @media(max-width:450px) {
     #copy{
-        grid-template-columns: 1fr 120px;
+        /* grid-template-columns: 1fr 120px; */
+        grid-template-columns: 1fr;
+    }
+    #copy p{
+        order: 2
     }
 }
 
@@ -36,7 +40,10 @@
     #copy ul{
         flex-wrap: wrap;
         justify-content: center;
-        width: 120px;
+        /* width: 120px; */
+        width: 100%;
+        padding: 10px 0;
+        order: 1;
     }
 }
 
@@ -48,6 +55,7 @@
 #copy li svg{
     width: 16px;
     height: 16px;
+    fill: var(--gray);
 }
 
 @media(max-width:776px) {

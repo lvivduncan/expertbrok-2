@@ -1,0 +1,28 @@
+.pagination{
+    margin: 30px 0;
+    display: block;
+    text-align: center;
+}
+
+.pagination li {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pagination li a {    
+    background-color: var(--cyan);
+    color: var(--white);
+    font-weight: 700;
+    display: block;
+    padding: 6px 10px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: .5s;
+}
+
+.pagination li a:hover {
+    background-color: var(--gray-light);
+    color: var(--cyan);
+
+}
