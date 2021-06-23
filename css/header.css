@@ -294,7 +294,8 @@
     margin: auto;
     position: relative;
     z-index: 1;
-    width: 100%
+    width: 100%;
+    padding-top: 100px;
 }
 
 @media(max-width:450px) {
