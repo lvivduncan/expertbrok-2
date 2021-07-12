@@ -162,7 +162,7 @@ p{
     width: 60px;
     height: 5px;
     background: var(--cyan);
-    border-radius: 10px;
+    border-radius: 0 10px 0 10px;
 }
 
 #page-name.cover h1{
