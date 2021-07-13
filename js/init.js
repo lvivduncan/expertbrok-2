@@ -137,8 +137,7 @@ function gridCarousel() {
     $('#search').addClass('disabled');
 }
 
-$('#menu a').on('click', function(e){
-    e.preventDefault();
+$('#menu a').on('click', function(){
     localStorage.setItem('disabled', 1);
 });
 

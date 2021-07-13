@@ -8,6 +8,7 @@
     display: inline-flex;
     align-items: center;
     justify-content: center;
+    margin: 0 2px;
 }
 
 .pagination li a {    
