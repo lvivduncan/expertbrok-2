@@ -384,7 +384,8 @@
     background: var(--white);
 }
 
-#services .item h4{
+#services .item span{
+    display: block;
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
