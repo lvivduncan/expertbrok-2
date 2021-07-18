@@ -102,23 +102,24 @@ p{
 
 /* назва сторінки */
 #page-name{
+    /* min-height: 20vh; */
     min-height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     background: var(--white);
-    padding: 0 20px;
+    padding: 20px;
     margin: 100px 0 0;
     text-align: center;
     position: relative;
 }
 
-@media(max-width:776px) {
+/* @media(max-width:776px) {
     #page-name{
         min-height: 260px;
     }
-}
+} */
 
 #page-name.cover{
     background-size: cover!important;
@@ -182,6 +183,15 @@ p{
     .social{
         margin: 0;        
     }    
+}
+
+.social a{
+    text-decoration: none;
+}
+
+.social a svg{
+    width: 30px;
+    height: 30px;
 }
 
 #up{ 
