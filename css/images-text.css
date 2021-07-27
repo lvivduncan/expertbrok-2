@@ -44,6 +44,20 @@
     transition: .5s;
 }
 
+.images-text .images.block{
+    display: block;
+}
+
+@media(max-width:776px) {
+    .images-text .images.block{
+        display: none;
+    }
+}
+
+.images-text .images.block img{
+    margin: 0 0 30px;
+}
+
 .text-content{
     display: flex;
     flex-direction: column;
@@ -69,13 +83,13 @@ blockquote p{
     border-radius: 5px;
 }
 
-.text-content h1{
+/* .text-content h1{
     margin: 0 0 50px;
     position: relative;
     font-weight: 500;
 }
 
-@media(max-width:450px) {
+@media(max-width:776px) {
     .text-content h1{
         font-size: 34px
     }
@@ -92,4 +106,4 @@ blockquote p{
     left: 0;
     background: var(--black);
     border-radius: 10px 0 10px 0;
-}
+} */

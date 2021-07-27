@@ -316,15 +316,15 @@
 }
 
 #title h1::before{
-    content: '';
-    display: inline-block;
-    position: absolute;
-    left: 0;
-    bottom: -10px;
-    width: 60px;
-    height: 5px;
+    /* content: ''; */
+    /* display: inline-block; */
+    /* position: absolute; */
+    /* left: 0; */
+    /* bottom: -10px; */
+    /* width: 60px; */
+    /* height: 5px; */
     background: var(--white);
-    border-radius: 10px;
+    /* border-radius: 10px 0 10px 0; */
 }
 
 #title p{

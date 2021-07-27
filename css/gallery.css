@@ -28,3 +28,15 @@
         grid-template-columns: repeat(2,1fr);
     }    
 }
+
+/* сторінка послуги */
+#service .gallery{
+    margin: 30px 0;
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media(max-width:540px){
+    #service .gallery{
+        grid-template-columns: 1fr;
+    }    
+}

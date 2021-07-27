@@ -1,0 +1,35 @@
+#service{
+    padding: 100px 0 30px;
+    width: 60%;
+    margin: auto;
+}
+
+@media(max-width:996px){
+    #service{
+        width: 95%;
+    }
+}
+
+/* #service h1{
+    margin: 0 0 50px;
+    position: relative;
+    font-weight: 500;
+}
+
+@media(max-width:776px) {
+    #service h1{
+        font-size: 34px;
+    }
+} */
+
+/* #service h1::before{
+    content: '';
+    display: inline-block;
+    width: 60px;
+    height: 5px;
+    position: absolute;
+    bottom: -10px;
+    left: 0;
+    background: var(--black);
+    border-radius: 10px 0 10px 0;
+} */
