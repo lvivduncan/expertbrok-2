@@ -213,9 +213,6 @@ p{
     }    
 }
 
-<<<<<<< HEAD
-
-
 .picture
 {
     display: block;
@@ -246,8 +243,6 @@ p{
     object-fit: cover;
 }
 
-
-=======
 .social a{
     text-decoration: none;
 }
@@ -257,7 +252,6 @@ p{
     height: 30px;
 }
 
->>>>>>> ba164404e2a3328ff5974b18a84ca38bd221bef9
 #up{ 
     text-decoration: none; 
     position: fixed; 
