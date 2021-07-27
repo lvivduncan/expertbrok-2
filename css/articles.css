@@ -51,20 +51,24 @@
     justify-content: center;
 }
 
-.articles article h3 {
-    line-height: 1;
-    /* font-size: 22px; */
+.articles article h1 {
+    line-height: 1.5;
     font-size: 16px;
     font-weight: 600;
     margin: 0 0 20px;
 }
 
-.articles article h3 a {
+.articles article .desc p{
+    margin: 0;
+    line-height: 1.4;
+}
+
+.articles article h1 a {
     text-decoration: none;
     color: var(--cyan-dark);
     transition: .5s;
 }
 
-.articles article h3 a:hover {
+.articles article h1 a:hover {
     color: var(--cyan);
 }

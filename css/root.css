@@ -94,6 +94,7 @@ img{
     max-width: 100%;
     vertical-align: middle;
     border-radius: 5px;
+    height: auto;
 }
 
 ::selection{
@@ -129,25 +130,24 @@ p{
 
 /* назва сторінки */
 #page-name{
-    /* min-height: calc(33vh + 100px); */
-    /* min-height: calc(25vh + 100px); */
-    min-height: calc(25vh + 140px);
+    /* min-height: 20vh; */
+    min-height: 20vh;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     background: var(--white);
-    padding: 0 20px;
+    padding: 20px;
+    margin: 100px 0 0;
     text-align: center;
     position: relative;
 }
 
-@media(max-width:776px) {
+/* @media(max-width:776px) {
     #page-name{
         min-height: 260px;
-        padding: 60px 0 0;
     }
-}
+} */
 
 #page-name.cover{
     background-size: cover!important;
@@ -158,10 +158,10 @@ p{
 #page-name.cover::before{
     content: '';
     position: absolute;
-    top:0;
-    left:0;
-    bottom:0;
-    right:0;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
     z-index: 1;
     background: rgba(0,0,0,.5);
 }
@@ -172,7 +172,7 @@ p{
     font-weight: 500;
     font-size: 42px;
     position: relative;
-    margin: 30px 0;
+    margin: 0 0 30px;
 }
 
 @media(max-width:776px) {
@@ -213,6 +213,7 @@ p{
     }    
 }
 
+<<<<<<< HEAD
 
 
 .picture
@@ -246,10 +247,21 @@ p{
 }
 
 
+=======
+.social a{
+    text-decoration: none;
+}
+
+.social a svg{
+    width: 30px;
+    height: 30px;
+}
+
+>>>>>>> ba164404e2a3328ff5974b18a84ca38bd221bef9
 #up{ 
     text-decoration: none; 
     position: fixed; 
-    bottom: 20px; 
+    bottom: 30px; 
     right: 20px; 
     z-index: 8; 
     width: 40px; 
