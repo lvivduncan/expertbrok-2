@@ -3,10 +3,23 @@
 #contact{
     padding: 50px 20px;
     display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-gap: 70px;
-    /* display: flex; */
-    /* gap: 70px; */
+    grid-template-columns: repeat(2,1fr) 2fr;
+    grid-gap: 40px;
+}
+
+@media(max-width:996px) {
+    #contact{
+        grid-template-columns: repeat(2,1fr);
+    }
+
+    #contact-desc{
+        order: 2;
+        grid-column: 1/-1;
+    }
+
+    #contact form{
+        order: 1;
+    }
 }
 
 @media(max-width:776px) {
@@ -15,111 +28,8 @@
     }
 }
 
-/* форма зліва */
-#contact-form{
-    /* width: 50%; */
-}
 
-#contact form{
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
-    grid-gap: 30px;
-    grid-template-areas: 
-        'form-title form-title form-title'
-        'form-name form-mail form-phone'
-        'form-textarea form-textarea form-textarea'
-        'form-button form-button form-button';
-}
 
-@media(max-width: 540px) {
-    #contact form{
-        grid-template-columns: 1fr;
-        grid-gap: 20px;
-        grid-template-areas: 
-            'form-title'
-            'form-name'
-            'form-mail'
-            'form-phone'
-            'form-textarea'
-            'form-button';
-    }
-}
-
-#contact form h4 {
-    grid-area: form-title;
-    text-transform: none;
-    font-weight: 500;
-    color: var(--cyan);
-    margin: 0;
-}
-
-@media(max-width:776px) {
-    #contact form h4{
-        text-align: center;
-    }
-}
-
-#form-name{
-    grid-area: form-name;
-}
-
-#form-mail{
-    grid-area: form-mail;
-}
-
-#form-phone{
-    grid-area: form-phone;
-}
-
-#form-textarea{
-    grid-area: form-textarea;
-}
-
-#form-textarea textarea{
-    resize: none;
-    height: 140px;
-}
-
-#form-button{
-    grid-area: form-button;
-}
-
-#contact button{
-    display: inline-block;
-    width: 220px;
-    padding: 10px 20px;
-    background: var(--cyan-dark);
-    color: var(--white);
-    font-weight: 900;
-    font-size: 14px;
-    border-radius: 5px;
-    text-align: center;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    outline: none;
-    border: none;
-    cursor: pointer;
-    transition: .5s;
-}
-
-#contact button:hover{
-    background: var(--cyan)
-}
-
-#contact input,
-#contact textarea{
-    width: calc(100% - 20px);
-    padding: 10px;
-    border: 2px solid var(--gray);
-    outline: none;
-    border-radius: 5px;
-    font-family: inherit;
-}
-
-#contact input:focus,
-#contact textarea:focus{
-    border-color: var(--cyan)
-}
 
 /* блок справа */
 #contact-info{

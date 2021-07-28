@@ -1,0 +1,104 @@
+
+
+form{
+    display: block;
+}
+
+form h4 {
+    grid-area: form-title;
+    text-transform: none;
+    font-weight: 500;
+    color: var(--cyan);
+    margin: 0 0 10px;
+}
+
+@media(max-width:776px) {
+    form h4{
+        text-align: center;
+    }
+}
+
+form p{
+    margin: 0 0 10px;
+}
+
+form label{
+    user-select: none;
+    cursor: pointer;
+}
+
+textarea{
+    resize: none;
+    height: 80px;
+}
+
+input[type="text"],
+textarea{
+    color: var(--cyan-dark);
+    display: block;
+    width: calc(100% - 24px);
+    padding: 10px;
+    border: 2px solid var(--white);
+    outline: none;
+    font-family: inherit;
+    font-size: inherit;
+    transition: .5s;
+}
+
+input[type="text"]:focus,
+textarea:focus{
+    border-color: var(--cyan);
+}
+
+select {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    font-family: inherit;
+    font-size: inherit;
+    line-height: 1.5;
+    color: var(--cyan-dark);
+    background-color: var(--white);
+    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='%231e5c8a'%3E%3Cpath fill-rule='evenodd' d='M1.646 4.646a.5.5 0 0 1 .708 0L8 10.293l5.646-5.647a.5.5 0 0 1 .708.708l-6 6a.5.5 0 0 1-.708 0l-6-6a.5.5 0 0 1 0-.708z'/%3E%3C/svg%3E");
+    background-repeat: no-repeat;
+    background-position: right .75rem center;
+    background-size: 20px 20px;
+
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+/* class for checkbox and radio */
+.checkbox{
+    display: flex;
+    align-items: center;
+}
+
+input[type="checkbox"]{
+    margin: 0 10px 0 0;
+}
+
+form button{
+    display: inline-block;
+    padding: 10px 20px;
+    background: var(--cyan-dark);
+    color: var(--white);
+    font-weight: 900;
+    font-size: 14px;
+    border-radius: 5px;
+    text-align: center;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    transition: .5s;
+}
+
+form button:hover{
+    background: var(--cyan)
+}
