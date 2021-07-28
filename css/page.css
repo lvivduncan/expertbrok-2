@@ -5,3 +5,13 @@
     grid-gap: 50px;
     margin: 100px 20px;
 }
+
+@media(max-width:996px) {
+    #page{
+        grid-template-columns: 1fr;
+    }
+
+    #page .images{
+        display: none;
+    }
+}
