@@ -3,18 +3,16 @@
 #contact{
     padding: 50px 20px;
     display: grid;
-    grid-template-columns: repeat(2,1fr) 2fr;
+    grid-template-columns: 1fr 2fr;
     grid-gap: 40px;
+    width: 780px;
+    margin: auto;
 }
 
-@media(max-width:996px) {
+@media(max-width:800px) {
     #contact{
-        grid-template-columns: repeat(2,1fr);
-    }
-
-    #contact-desc{
-        order: 2;
-        grid-column: 1/-1;
+        grid-template-columns: 1fr;
+        width: 95%;
     }
 
     #contact form{
@@ -22,11 +20,11 @@
     }
 }
 
-@media(max-width:776px) {
+/* @media(max-width:776px) {
     #contact{
         grid-template-columns: 1fr;
     }
-}
+} */
 
 
 
@@ -38,7 +36,7 @@
     background: var(--white);
 }
 
-@media(max-width:450px) {
+@media(max-width:460px) {
     #contact-info{
         grid-template-columns: 1fr;
         padding: 20px;
