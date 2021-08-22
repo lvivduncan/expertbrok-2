@@ -40,3 +40,23 @@
         grid-template-columns: 1fr;
     }    
 }
+
+/* галерея збоку справа */
+.images-text .images.block .gallery
+{
+    grid-template-columns: repeat(2,1fr);
+}
+
+@media(max-width:996px)
+{
+    .images-text .images.block .gallery
+    {
+        grid-template-columns: 1fr;
+        grid-gap: 0;
+    }
+
+    .images-text .images.block .gallery img
+    {
+        margin: 0 0 20px;
+    }
+}
