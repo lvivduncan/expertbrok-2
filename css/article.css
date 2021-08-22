@@ -11,6 +11,7 @@
     #article{
         /* flex-flow: column; */
         grid-template-columns: 1fr;
+        grid-gap: 0;
     }
 }
 

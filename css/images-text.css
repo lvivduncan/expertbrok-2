@@ -63,12 +63,6 @@
     flex-direction: column;
 }
 
-/* .text-content :last-child{
-    margin-top: auto;
-    text-align: right;
-    color: var(--cyan-dark)
-} */
-
 /* цитата */
 blockquote{
     margin: 0 0 26px;
@@ -83,27 +77,16 @@ blockquote p{
     border-radius: 5px;
 }
 
-/* .text-content h1{
-    margin: 0 0 50px;
-    position: relative;
-    font-weight: 500;
+/* внутрішня сторінка */
+#content .images-text
+{
+    margin: auto;
 }
 
-@media(max-width:776px) {
-    .text-content h1{
-        font-size: 34px
-    }
+@media(max-width:996px)
+{
+    #content .images-text
+    {
+        width: 95%;
+    }    
 }
-
-
-.text-content h1::before{
-    content: '';
-    display: inline-block;
-    width: 60px;
-    height: 5px;
-    position: absolute;
-    bottom: -10px;
-    left: 0;
-    background: var(--black);
-    border-radius: 10px 0 10px 0;
-} */

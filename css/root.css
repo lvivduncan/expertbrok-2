@@ -207,11 +207,11 @@ p{
     text-align: center;
 }
 
-@media(max-width:776px) {
+/* @media(max-width:776px) {
     .social{
         margin: 0;        
     }    
-}
+} */
 
 .picture
 {
