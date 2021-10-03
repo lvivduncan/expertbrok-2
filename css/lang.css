@@ -1,4 +1,5 @@
-#lang-wrapper{
+#lang-wrapper
+{
     position: fixed;
     top: 0;
     left: 0;
@@ -12,11 +13,13 @@
     animation-delay: calc(.2s * var(--i));
 }
 
-#lang-wrapper.click{
+#lang-wrapper.click
+{
     display: none;
 }
 
-#lang{
+#lang
+{
     position: fixed;
     bottom: 50%;
     left: 50%;
@@ -45,8 +48,9 @@
     animation-delay: calc(.2s * var(--i));
 }
 
-#lang.click{
-    bottom: 60px;
+#lang.click
+{
+    bottom: 50px;
     left: 30px;
     width: 70px;
     height: 70px;
@@ -54,27 +58,32 @@
     transform: translate(calc(100% - 90px), calc(100% - 50px));
 }
 
-#lang a{
+#lang a
+{
     display: block;
     font-weight: 700;
     text-decoration: none;
     text-transform: uppercase;
 }
 
-#lang.click a{
+#lang.click a
+{
     text-transform: none;
 }
 
-#lang.click a span{
+#lang.click a span
+{
     display: none;
 }
 
-#lang hr{
+#lang hr
+{
     border: 1px solid var(--cyan);
     width: 100%;
     margin: 5px
 }
 
-#lang.click hr{
+#lang.click hr
+{
     margin: 0 5px
 }

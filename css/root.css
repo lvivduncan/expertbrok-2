@@ -1,5 +1,6 @@
 /* обнулення стилів */
-html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video {
+html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abbr,acronym,address,big,cite,code,del,dfn,em,img,ins,kbd,q,s,samp,small,strike,strong,sub,sup,tt,var,b,u,i,center,dl,dt,dd,ol,ul,li,fieldset,form,label,legend,table,caption,tbody,tfoot,thead,tr,th,td,article,aside,canvas,details,embed,figure,figcaption,footer,header,hgroup,menu,nav,output,ruby,section,summary,time,mark,audio,video
+{
     margin: 0;
     padding: 0;
     border: 0;
@@ -9,7 +10,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     box-sizing: border-box;
 }
 
-:root{
+:root
+{
     --cyan: #1e5c8a;
     --cyan-dark: #273c66;
     --cyan-light: #00adee;
@@ -24,7 +26,8 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
     --gold: #f4bf00;
 }
 
-body{
+body
+{
     font-size: 16px;
     font-family: 'Nunito', sans-serif;
     background-attachment: fixed;
@@ -33,10 +36,9 @@ body{
     color: var(--gray-dark);
 }
 
-h1,h2,h3,h4,h5,h6{
+h1,h2,h3,h4,h5,h6
+{
     font-family: 'Rubik', sans-serif;
-    /* color: var(--black); */
-    /* color: var(--cyan); */
     color: var(--cyan-dark);
     margin: 0 0 26px;
     line-height: 1.2;
@@ -44,24 +46,23 @@ h1,h2,h3,h4,h5,h6{
     font-weight: 500;
 }
 
-h1{
+h1
+{
     font-size: 42px;
-}
-
-h1{
     margin: 0 0 50px;
     position: relative;
-    /* font-weight: 500; */
-    /* color: var(--cyan); */
 }
 
-@media(max-width:776px) {
-    h1{
+@media(max-width:776px)
+{
+    h1
+    {
         font-size: 34px;
     }
 }
 
-h1::before {
+h1::before
+{
     content: '';
     display: inline-block;
     width: 60px;
@@ -69,67 +70,78 @@ h1::before {
     position: absolute;
     bottom: -10px;
     left: 0;
-    /* background: var(--black); */
     background: var(--cyan);
     border-radius: 10px 0 10px 0;
 }
 
-h2{
+h2
+{
     font-size: 36px;
 }
 
-h3{
+h3
+{
     font-size: 30px;
 }
 
-h4{
+h4
+{
     font-size: 22px;
 }
 
-h5{
+h5
+{
     font-size: 16px;
 }
 
-img{
+img
+{
     max-width: 100%;
     vertical-align: middle;
     border-radius: 5px;
     height: auto;
 }
 
-::selection{
+::selection
+{
     background: var(--cyan);
     color: var(--white);
 }
 
-strong{
+strong
+{
     font-weight: 700;
     color: var(--red);
 }
 
-a{
+a
+{
     color: var(--cyan);
     text-decoration: underline;
 }
 
-a:hover{
+a:hover
+{
     color: var(--red);
     text-decoration: none;
 }
 
-p{
+p
+{
     line-height: 1.6;
     margin: 0 0 26px;
     font-size: 16px;
 }
 
-.disabled{
+.disabled
+{
     /* спеціальний клас для елементів, в яких буде відключено анімацію */
     animation-delay: -99s!important;
 }
 
 /* назва сторінки */
-#page-name{
+#page-name
+{
     /* min-height: 20vh; */
     min-height: 20vh;
     display: flex;
@@ -149,13 +161,15 @@ p{
     }
 } */
 
-#page-name.cover{
+#page-name.cover
+{
     background-size: cover!important;
     background-position: center!important;
 }
 
 /* тінь */
-#page-name.cover::before{
+#page-name.cover::before
+{
     content: '';
     position: absolute;
     top: 0;
@@ -166,7 +180,8 @@ p{
     background: rgba(0,0,0,.5);
 }
 
-#page-name h1{
+#page-name h1
+{
     color: var(--cyan);
     text-transform: uppercase;
     font-weight: 500;
@@ -175,13 +190,16 @@ p{
     margin: 0 0 30px;
 }
 
-@media(max-width:776px) {
-    #page-name h1{
+@media(max-width:776px)
+{
+    #page-name h1
+    {
         font-size: 30px;
     }
 }
 
-#page-name h1::before{
+#page-name h1::before
+{
     content: '';
     display: inline-block;
     position: absolute;
@@ -193,16 +211,19 @@ p{
     border-radius: 0 10px 0 10px;
 }
 
-#page-name.cover h1{
+#page-name.cover h1
+{
     color: var(--white);
     z-index: 2;
 }
 
-#page-name.cover h1::before{
+#page-name.cover h1::before
+{
     background: var(--white);
 }
 
-.social{
+.social
+{
     margin: 30px 0;
     text-align: center;
 }
@@ -243,16 +264,19 @@ p{
     object-fit: cover;
 }
 
-.social a{
+.social a
+{
     text-decoration: none;
 }
 
-.social a svg{
+.social a svg
+{
     width: 30px;
     height: 30px;
 }
 
-#up{ 
+#up
+{ 
     text-decoration: none; 
     position: fixed; 
     bottom: 30px; 
@@ -260,17 +284,19 @@ p{
     z-index: 8; 
     width: 40px; 
     height: 40px; 
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300adee' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z'/%3E%3C/svg%3E"); */
+    /* background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231e5c8a' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M1 8a7 7 0 1 0 14 0A7 7 0 0 0 1 8zm15 0A8 8 0 1 1 0 8a8 8 0 0 1 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z'/%3E%3C/svg%3E"); */
     
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%2300adee' viewBox='0 0 16 16'%3E%3Cpath d='M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z'/%3E%3C/svg%3E");
+    background: var(--white) url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%231e5c8a' viewBox='0 0 16 16'%3E%3Cpath fill-rule='evenodd' d='M8 12a.5.5 0 0 0 .5-.5V5.707l2.146 2.147a.5.5 0 0 0 .708-.708l-3-3a.5.5 0 0 0-.708 0l-3 3a.5.5 0 1 0 .708.708L7.5 5.707V11.5a.5.5 0 0 0 .5.5z'/%3E%3C/svg%3E");
+    border-radius: 50%;
+    border: 3px solid var(--cyan);
     background-size: cover;
-
-    transition: all 0.5s;
+    transition: .5s;
 }
 
-#up:hover{
-    background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' fill='%23273c66' viewBox='0 0 16 16'%3E%3Cpath d='M16 8A8 8 0 1 0 0 8a8 8 0 0 0 16 0zm-7.5 3.5a.5.5 0 0 1-1 0V5.707L5.354 7.854a.5.5 0 1 1-.708-.708l3-3a.5.5 0 0 1 .708 0l3 3a.5.5 0 0 1-.708.708L8.5 5.707V11.5z'/%3E%3C/svg%3E");
+#up.active
+{
+    display: none;
 }
-
-
 
 /* end */

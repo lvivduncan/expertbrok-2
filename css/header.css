@@ -1,4 +1,5 @@
-#header{
+#header
+{
     height: 100vh;
     background-size: cover!important;
     display: flex;
@@ -9,14 +10,17 @@
     overflow: hidden;
 }
 
-@media(max-width:450px) {
-    #header{
+@media(max-width:450px)
+{
+    #header
+    {
         height: 90vh;
     }    
 }
 
 /* анімаційна картинка */
-#header-image{
+#header-image
+{
     width: 100%; 
     height: 100vh; 
     background-size: cover!important;
@@ -28,7 +32,8 @@
     animation: header-image 36s linear;
 }
 
-#nav{
+#nav
+{
     position: fixed;
     top: 0;
     left: 0;
@@ -43,12 +48,14 @@
     transition: .5s;
 }
 
-#nav.fixed{
+#nav.fixed
+{
     height: 60px;
 }
 
 /* логотип */
-#logo{
+#logo
+{
     display: flex;
     align-items: center;
     margin-right: auto;
@@ -61,31 +68,37 @@
     animation-delay: .1s;
 }
 
-#logo img{
+#logo img
+{
     height: 55px;
     transition: .5s;
     border-radius: 0;
 }
 
-.fixed #logo img{
+.fixed #logo img
+{
     height: 45px;
 }
 
 /* menu */
-#menu{
+#menu
+{
     display: flex;
     padding: 0 10px;
     height: 100%;
     align-items: center;
 }
 
-@media(max-width:996px) {
-    #menu{
+@media(max-width:996px)
+{
+    #menu
+    {
         display: none;
     }
 
     /* mobile menu */
-    #menu.active{
+    #menu.active
+    {
         display: flex;
         align-items: center;
         justify-content: center;
@@ -105,7 +118,8 @@
 }
 
 /* mobile button */
-#nav-button{
+#nav-button
+{
     display: none;
     margin: 0 10px;
     width: 24px;
@@ -118,12 +132,15 @@
     animation-delay: calc(.2s * var(--i));
 }
 
-@media(max-width:996px) {
-    #nav-button{
+@media(max-width:996px)
+{
+    #nav-button
+    {
         display: block;
     }
 
-    #nav-button.active{
+    #nav-button.active
+    {
         position: absolute;
         top: 20px;
         right: 20px;
@@ -132,7 +149,8 @@
     }
 }
 
-#menu li{
+#menu li
+{
     display: flex;
     height: 100%;
     align-items: center;
@@ -140,14 +158,16 @@
 }
 
 @media(max-width:996px) {
-    #menu.active li{
+    #menu.active li
+    {
         display: block;
-        padding: 10px;
+        /* padding: 10px; */
         height: auto;
     }
 }
 
-#menu li a{
+#menu li a
+{
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
@@ -170,22 +190,28 @@
 }
 
 
-@media(max-width:996px) {
-    #menu.active li a{
+@media(max-width:996px)
+{
+    #menu.active li a
+    {
         display: block;
         height: auto;
         border: none;
+        font-size: 16px;
+        padding: 10px;
     }
 }
 
-#menu li a:hover{
+#menu li a:hover
+{
     background: var(--gray-light);
     color: var(--black);
     border-top-color: var(--gray);
 }
 
 /* search + phone */
-#nav-misc{
+#nav-misc
+{
     display: flex;
     height: 100%;
     align-items: center;
@@ -196,7 +222,8 @@
 
 
 
-#search{
+#search
+{
     padding: 0 10px;
 
     opacity: 0;
@@ -204,13 +231,16 @@
     animation-delay: calc(.2s * var(--i));
 }
 
-@media(max-width:400px) {
-    #search{
+@media(max-width:400px)
+{
+    #search
+    {
         padding: 0 5px;
     }
 }
 
-#search svg{
+#search svg
+{
     fill: none;
     stroke: var(--black);
     stroke-width: 3;
@@ -220,15 +250,18 @@
     height: 18px;
 }
 
-@media(max-width: 996px){
-    #search svg{
+@media(max-width: 996px)
+{
+    #search svg
+    {
         width: 22px;
         height: 22px;
     }
 }
 
 
-#phone{
+#phone
+{
     padding: 0 10px;
 
     opacity: 0;
@@ -236,12 +269,15 @@
     animation-delay: calc(.2s * var(--i));
 }
 
-@media(max-width:400px) {
-    #phone{
+@media(max-width:400px)
+{
+    #phone
+    {
         padding: 0 5px;
     }
 }
-#phone a{
+#phone a
+{
     font-weight: 600;
     font-size: 13px;
     text-transform: uppercase;
@@ -250,33 +286,41 @@
     transition: .5s;
 }
 
-#phone span{
+#phone span
+{
     color: var(--cyan-light);
     display: inline-block;
     margin-right: 5px;
 }
 
-#phone-desktop{
+#phone-desktop
+{
     display: block;
 }
 
-@media(max-width:996px) {
-    #phone-desktop{
+@media(max-width:996px)
+{
+    #phone-desktop
+    {
         display: none;
     }
 }
 
-#phone-mobile{
+#phone-mobile
+{
     display: none;
 }
 
-@media(max-width: 996px) {
-    #phone-mobile{
+@media(max-width: 996px)
+{
+    #phone-mobile
+    {
         display: block;
     }
 }
 
-#phone-mobile svg{
+#phone-mobile svg
+{
     width: 22px;
     height: 22px;
 
@@ -290,7 +334,8 @@
 
 
 /* текст на слайді */
-#title{
+#title
+{
     margin: auto;
     position: relative;
     z-index: 1;
@@ -298,13 +343,16 @@
     padding-top: 100px;
 }
 
-@media(max-width:450px) {
-    #title{
+@media(max-width:450px)
+{
+    #title
+    {
         display: none;
     }
 }
 
-#title h1{
+#title h1
+{
     color: var(--white);
     text-transform: uppercase;
     font-weight: 500;
@@ -315,19 +363,13 @@
     animation-delay: calc(.2s * var(--i));
 }
 
-#title h1::before{
-    /* content: ''; */
-    /* display: inline-block; */
-    /* position: absolute; */
-    /* left: 0; */
-    /* bottom: -10px; */
-    /* width: 60px; */
-    /* height: 5px; */
+#title h1::before
+{
     background: var(--white);
-    /* border-radius: 10px 0 10px 0; */
 }
 
-#title p{
+#title p
+{
     color: var(--white);
     font-size: 26px;
     margin: 10px 0;
@@ -340,17 +382,21 @@
 }
 
 /* скролл послуг */
-#services{
+#services
+{
     margin-bottom: 20px;
 }
 
-@media(max-width:450px) {
-    #services{
+@media(max-width:450px)
+{
+    #services
+    {
         margin-top: auto;
     }
 }
 
-#services .item {
+#services .item
+{
     text-align: center;
     /* display: block; */
 
@@ -368,23 +414,29 @@
     transition: .5s;
 }
 
-@media(max-width:996px) {
-    #services .item{
+@media(max-width:996px)
+{
+    #services .item
+    {
         height: 180px;
     }
 }
 
-@media(max-width:540px) {
-    #services .item{
+/* @media(max-width:540px)
+{
+    #services .item
+    {
         height: 120px;
     }
-}
+} */
 
-#services .item:hover {
+#services .item:hover
+{
     background: var(--white);
 }
 
-#services .item span{
+#services .item span
+{
     display: block;
     font-weight: 800;
     font-size: 13px;
@@ -392,7 +444,8 @@
     margin: 0;
 }
 
-#services .item svg {
+#services .item svg
+{
     fill: var(--cyan);
     width: 42px;
     height: 42px;
@@ -401,29 +454,34 @@
     margin: auto;
 }
 
-#services .item:hover svg{
+#services .item:hover svg
+{
     transform: translateY(-5px)
 }
 
 /* arrow down */
-#down {
+#down
+{
     margin: 0 auto;
     position: relative;
     z-index: 1;
 }
 
-#down a{
+#down a
+{
     display: inline-block;
     animation: down 1.5s infinite linear forwards;
 }
 
-#down svg{
+#down svg
+{
     width: 40px;
     height: 40px;
     fill: var(--white);
     transition: .5s;
 }
 
-#down a:hover svg{
+#down a:hover svg
+{
     fill: var(--cyan);
 }

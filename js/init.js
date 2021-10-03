@@ -87,6 +87,7 @@ if(localStorage.lang == 1){
 $('#nav-button').on('click',function(){
     $(this).toggleClass('active');
     $('#menu').toggleClass('active');
+    $('#up').toggleClass('active');
 });
 
 function gridCarousel() {
