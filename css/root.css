@@ -296,7 +296,7 @@ p
 
 #up.active
 {
-    display: none;
+    display: none!important;
 }
 
 /* end */
