@@ -221,6 +221,12 @@
     display: flex;
 }
 
+li#menu-lang span
+{
+    display: block;
+    top: 7px;
+}
+
 /* search + phone */
 #nav-misc
 {
