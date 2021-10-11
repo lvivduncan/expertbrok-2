@@ -88,6 +88,7 @@ $('#nav-button').on('click',function(){
     $(this).toggleClass('active');
     $('#menu').toggleClass('active');
     $('#up').toggleClass('active');
+    $('#lang').toggleClass('active');
 });
 
 function gridCarousel() {

@@ -209,6 +209,17 @@
     border-top-color: var(--gray);
 }
 
+/* мови у меню -- тільки на мобільному */
+#menu li#menu-lang
+{
+    display: none;
+}
+
+#menu.active li#menu-lang
+{
+    display: flex;
+}
+
 /* search + phone */
 #nav-misc
 {
