@@ -166,7 +166,8 @@
     }
 }
 
-#menu li a
+#menu li a,
+#menu li span
 {
     font-weight: 600;
     font-size: 13px;
