@@ -40,6 +40,7 @@ textarea
 }
 
 input[type="text"],
+input[type="search"],
 textarea
 {
     color: var(--cyan-dark);
@@ -54,6 +55,7 @@ textarea
 }
 
 input[type="text"]:focus,
+input[type="search"]:focus,
 textarea:focus
 {
     border-color: var(--cyan);
