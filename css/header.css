@@ -216,7 +216,8 @@
     display: none;
 }
 
-#menu.active li#menu-lang
+#menu.active li#menu-lang,
+#menu.active li#menu-lang.active
 {
     display: flex;
 }
