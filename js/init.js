@@ -71,6 +71,8 @@ $('#up').on('click', function(e){
 if(localStorage.lang == 1){
         $('#lang-wrapper').addClass('click');
         $('#lang').addClass('click');
+
+        $('#menu-lang').addClass('active');
 } else {
     // lang
     $('#lang-wrapper, #lang').on('click', function(e){
@@ -78,6 +80,7 @@ if(localStorage.lang == 1){
 
         $('#lang-wrapper').addClass('click');
         $('#lang').addClass('click');
+        $('#menu-lang').addClass('active');
 
         localStorage.lang = 1;
     });    
