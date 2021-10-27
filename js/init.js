@@ -69,8 +69,8 @@ $('#up').on('click', function(e){
 );
 
 if(localStorage.lang == 1){
-        $('#lang-wrapper').addClass('click');
-        $('#lang').addClass('click');
+        $('#lang-wrapper').css({'display':'none'});
+        $('#lang').css({'display':'none'});
 
         $('#menu-lang').addClass('active');
 } else {
