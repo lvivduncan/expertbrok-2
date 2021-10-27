@@ -1,10 +1,12 @@
 
 
-form{
+form
+{
     display: block;
 }
 
-form h4 {
+form h4
+{
     grid-area: form-title;
     text-transform: none;
     font-weight: 500;
@@ -12,28 +14,34 @@ form h4 {
     margin: 0 0 10px;
 }
 
-@media(max-width:776px) {
-    form h4{
+@media(max-width:776px)
+{
+    form h4
+    {
         text-align: center;
     }
 }
 
-form p{
+form p
+{
     margin: 0 0 10px;
 }
 
-form label{
+form label
+{
     user-select: none;
     cursor: pointer;
 }
 
-textarea{
+textarea
+{
     resize: none;
     height: 80px;
 }
 
 input[type="text"],
-textarea{
+textarea
+{
     color: var(--cyan-dark);
     display: block;
     width: calc(100% - 24px);
@@ -46,11 +54,13 @@ textarea{
 }
 
 input[type="text"]:focus,
-textarea:focus{
+textarea:focus
+{
     border-color: var(--cyan);
 }
 
-select {
+select
+{
     display: block;
     width: 100%;
     padding: 10px;
@@ -73,16 +83,19 @@ select {
 }
 
 /* class for checkbox and radio */
-.checkbox{
+.checkbox
+{
     display: flex;
     align-items: center;
 }
 
-input[type="checkbox"]{
+input[type="checkbox"]
+{
     margin: 0 10px 0 0;
 }
 
-form button{
+form button
+{
     display: inline-block;
     padding: 10px 20px;
     background: var(--cyan-dark);
@@ -99,6 +112,7 @@ form button{
     transition: .5s;
 }
 
-form button:hover{
+form button:hover
+{
     background: var(--cyan)
 }

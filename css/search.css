@@ -1,0 +1,37 @@
+#search
+{
+    height: calc(100vh - 182px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-flow: column;
+    padding: 0 20px;
+}
+
+#search form 
+{
+    display: flex;
+    gap: 5px;
+}
+
+#search ul, 
+#search ol 
+{
+    display: block;
+    width: 1200px;
+    margin: 20px auto 0;
+}
+
+@media(max-width:1240px)
+{
+    #search ul, 
+    #search ol 
+    {
+        width: 100%;
+    }
+}
+
+#search li 
+{
+    margin: 5px 0;
+}

@@ -250,7 +250,7 @@ li#menu-lang span
 
 
 
-#search
+.search
 {
     padding: 0 10px;
 
@@ -261,13 +261,13 @@ li#menu-lang span
 
 @media(max-width:400px)
 {
-    #search
+    .search
     {
         padding: 0 5px;
     }
 }
 
-#search svg
+.search svg
 {
     fill: none;
     stroke: var(--black);
@@ -280,7 +280,7 @@ li#menu-lang span
 
 @media(max-width: 996px)
 {
-    #search svg
+    .search svg
     {
         width: 22px;
         height: 22px;
