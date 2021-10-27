@@ -224,9 +224,17 @@
 
 li#menu-lang span
 {
-    display: block;
-    top: 7px;
-    padding: 0;
+    display: none;
+}
+
+@media(max-width:776px)
+{
+    li#menu-lang span
+    {
+        display: block;
+        top: 7px;
+        padding: 0;
+    }
 }
 
 /* search + phone */

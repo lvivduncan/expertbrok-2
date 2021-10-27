@@ -7,7 +7,6 @@
     right: 0;
     z-index: 4;
     background: rgba(0,0,0, .5);
-
     opacity: 0;
     animation: opacity .5s linear forwards;
     animation-delay: calc(.2s * var(--i));
@@ -24,25 +23,19 @@
     top: calc(50% - 70px);
     right: calc(50% - 70px);
     z-index: 4;
-
     width: 140px;
     height: 140px;
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
-    
     background: var(--white);
     padding: 5px 10px;
     border: 6px solid var(--cyan);
     text-align: center;
     border-radius: 50%;
-
     box-shadow: 0 0 10px rgba(111,111,111,.5);
-    
     transition: 1.5s;
-    transform: translate(-50%, -50%);
-
     opacity: 0;
     animation: opacity .5s linear forwards;
     animation-delay: calc(.2s * var(--i));
@@ -50,12 +43,11 @@
 
 #lang.click
 {
-    top: 0;
-    right: 0;
+    top: -100px;
+    right: 100px;
     width: 70px;
     height: 70px;
     border-width: 3px;
-    /* transform: translate(calc(100% - 90px), calc(100% - 50px)); */
 }
 
 #lang a
