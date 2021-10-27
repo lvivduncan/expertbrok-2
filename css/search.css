@@ -19,11 +19,11 @@
 #search ol 
 {
     display: block;
-    width: 1200px;
+    width: 600px;
     margin: 20px auto 0;
 }
 
-@media(max-width:1240px)
+@media(max-width:640px)
 {
     #search ul, 
     #search ol 
