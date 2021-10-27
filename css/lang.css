@@ -21,9 +21,9 @@
 #lang
 {
     position: fixed;
-    bottom: 50%;
-    left: 50%;
-    z-index: 5;
+    top: calc(50% - 70px);
+    right: calc(50% - 70px);
+    z-index: 4;
 
     width: 140px;
     height: 140px;
@@ -40,7 +40,7 @@
 
     box-shadow: 0 0 10px rgba(111,111,111,.5);
     
-    transition: .5s;
+    transition: 1.5s;
     transform: translate(-50%, -50%);
 
     opacity: 0;
@@ -50,12 +50,12 @@
 
 #lang.click
 {
-    bottom: 50px;
-    left: 30px;
+    top: 0;
+    right: 0;
     width: 70px;
     height: 70px;
     border-width: 3px;
-    transform: translate(calc(100% - 90px), calc(100% - 50px));
+    /* transform: translate(calc(100% - 90px), calc(100% - 50px)); */
 }
 
 #lang a
