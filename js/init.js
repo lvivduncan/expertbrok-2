@@ -94,6 +94,13 @@ $('#nav-button').on('click',function(){
     $('#lang').toggleClass('active');
 });
 
+// mobile phone
+$('#phone-mobile').on('click', function(){
+
+    $('#phone-mobile-content').toggleClass('active');
+    $(this).toggleClass('active');
+});
+
 function gridCarousel() {
     if ($(window).width() < 776) {
        $('.partners .owl-carousel').owlCarousel({
@@ -141,7 +148,8 @@ function gridCarousel() {
     $('#nav-button').addClass('disabled');
     $('#menu a').addClass('disabled');
     $('#phone').addClass('disabled');
-    $('#search').addClass('disabled');
+    $('#phone-mobile').addClass('disabled');
+    $('.search').addClass('disabled');
 }
 
 $('#menu a').on('click', function(){
