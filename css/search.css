@@ -1,12 +1,12 @@
 #search
 {
-    height: calc(100vh - 282px);
+    min-height: calc(100vh - 332px);
     display: flex;
     align-items: center;
     justify-content: center;
     flex-flow: column;
     padding: 0 20px;
-    margin: 100px 0 0;
+    margin: 150px 0 0;
 }
 
 #search form 
@@ -35,7 +35,7 @@
 #search li 
 {
     margin: 5px 0;
-    display: block;
+    /* display: block; */
 }
 
 #search p 
