@@ -94,11 +94,16 @@ $('#nav-button').on('click',function(){
     $('#lang').toggleClass('active');
 });
 
-// mobile phone
+// mobile phone -- show
 $('#phone-mobile').on('click', function(){
 
-    $('#phone-mobile-content').toggleClass('active');
-    $(this).toggleClass('active');
+    $('#phone-mobile-content').addClass('active');
+});
+
+// mobile phone -- hide
+$('#phone-mobile-content .close').on('click', function(){
+
+    $('#phone-mobile-content').removeClass('active');
 });
 
 function gridCarousel() {
