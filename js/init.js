@@ -198,3 +198,29 @@ $('.share-linkedin').on('click',function(){window.open('https://linkedin.com/sha
 $('.share-telegram').on('click',function(){window.open('https://telegram.me/share/url?url='+window.location.href+'&text='+document.title,'telegram','toolbar=0,status=0,resizable=1,width=626,height=436');return false});
 
 $('.share-viber').on('click',function(){window.open('viber://forward?text='+document.title+' '+window.location.href,'viber','toolbar=0,status=0,resizable=1,width=626,height=436');return false});
+
+
+// send mail
+$('#form form').trigger('reset');
+
+$('#form form').on('submit', function (e) {
+    e.preventDefault();
+        $.ajax({
+            url: '../mail/send.php',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            data: new FormData(this),
+            success: function (msg) {
+            console.log(msg);
+            if (msg == 'ok') {
+                setTimeout(() => {$.fancybox.open(`<p>Лист надіслано!</p>`), 1000});
+                setTimeout(() => $.fancybox.close(), 2000);
+                $('#form form').trigger('reset'); // очистка
+            } else {
+                setTimeout(() => {$.fancybox.open(`<p>Не вдалося надіслати лист!</p>`), 1000});
+                setTimeout(() => $.fancybox.close(), 2000);
+            }
+        }
+    });
+});
