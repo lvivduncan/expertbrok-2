@@ -48,7 +48,7 @@
 .articles article .desc {
     display: flex;
     flex-flow: column;
-    justify-content: center;
+    /* justify-content: center; */
 }
 
 .articles article h1 {
