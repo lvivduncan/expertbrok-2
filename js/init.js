@@ -206,7 +206,7 @@ $('#form form').trigger('reset');
 $('#form form').on('submit', function (e) {
     e.preventDefault();
         $.ajax({
-            url: '../mail/send.php',
+            url: 'https://expertbrok.com.ua/mail/send.php',
             type: 'POST',
             contentType: false,
             processData: false,
